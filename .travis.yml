@@ -1,6 +1,15 @@
-language: c++
-gcc:
- - "5.2"
+
+
+install: make get-deps
+./configure && make && make test
+
+
+
+language: cpp
+
+
+compiler: gcc
+
 
 # uncomment this line if your project needs to run something other than `rake`:
 # script: bundle exec rspec spec
