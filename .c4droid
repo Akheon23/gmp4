@@ -1,0 +1,11 @@
+#Wed Dec 09 03:47:08 EST 2015
+comp_mode=2
+binary_fname=
+conf_patch=true
+run_mode=0
+qmake_cmd=export PATH\=(c4droid\:GCCROOT)qt/bin/\:$PATH\nexport C4DROID_QTLIBPATH\=(c4droid\:QTLIBPATH)\nqmake -spec android-g++
+conf_cmd=export PATH\=/busybox-virtual\:(c4droid\:DATADIR)\:(c4droid\:GCCROOT)bin\:(c4droid\:GCCROOT)(c4droid\:PREFIX)/bin/\:$PATH\nexport CFLAGS\="-Os -s (c4droid\:PIE)"\nexport CXXFLAGS\="-Os -s (c4droid\:PIE)"\nexport SHELL\="(c4droid\:DATADIR)busybox sh"\nexport CONFIG_SHELL\="sh"\nexport PKG_CONFIG_PATH\=(c4droid\:GCCROOT)(c4droid\:PREFIX)/lib/pkgconfig\ncd (c4droid\:BUILDDIR)\n(c4droid\:CURSRCDIR)/configure --host\=(c4droid\:PREFIX) --prefix\=(c4droid\:GCCROOT)(c4droid\:PREFIX) CFLAGS\="$CFLAGS" CXXFLAGS\="$CXXFLAGS" --build\=i686-linux --disable-shared --enable-static\nmake SHELL\="$SHELL"\nmake install SHELL\="$SHELL"
+make_cmd=make CC\="$CC" CXX\="$CXX" SHELL\="$SHELL"
+sm_names=tal-reent.c randlc2x.c randmts.c invalid.c mp_set_fns.c tal-debug.c dumbmp.c errno.c gen-bases.c randsd.c gen-fib.c memory.c tal-notreent.c ansi2knr.c randmt.c mp_dv_tab.c gen-psqr.c compat.c randbui.c randlc2s.c randclr.c mp_minv_tab.c assert.c rand.c version.c randmui.c randdef.c randiset.c rands.c randsdui.c gen-fac_ui.c mp_clz_tab.c mp_get_fns.c extract-dbl.c mp_bpl.c
+prepare_cmds=export PATH\=/busybox-virtual\:(c4droid\:DATADIR)\:(c4droid\:GCCROOT)bin\:(c4droid\:GCCROOT)(c4droid\:PREFIX)/bin/\:$PATH\nexport CC\="(c4droid\:PREFIX)-gcc (c4droid\:PIE) (c4droid\:MAKEMODEARGS)"\nexport CXX\="(c4droid\:PREFIX)-g++ (c4droid\:PIE) (c4droid\:MAKEMODEARGS)"\nexport SHELL\="(c4droid\:DATADIR)busybox sh"\ncd (c4droid\:CURSRCDIR)
+conf_internal=true
